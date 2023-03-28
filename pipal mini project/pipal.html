@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a webpage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lato:wght@300&family=Roboto+Mono:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pipal.css">
+
+    
+    <style>
+      button:hover{
+      background-color: rgb(198, 32, 32);
+        border: 1px solid black;
+        border-radius:25px;
+        
+      }
+     
+     
+        .book div {
+            
+        height: 100px;
+        width: 100px;
+        width: 40%;
+        height: 5%;
+        text-align: center;
+        border: 1px solid rgb(0, 238, 255);
+        animation-name: x;
+        position: relative;
+        animation-duration: 8s;
+         animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate ;
+        animation-timing-function: linear;
+        
+        }
+         @keyframes x {
+            
+            0%{background-color: pink;}
+            50%{background-color: yellow;}
+        from{
+        left: 0px;
+        }
+        to{
+            left: 60%;
+            background-color: blue;
+        }    
+        } 
+      
+        
+        </style>
+</head>
+ <body>
+    <section class="header">
+<nav>
+<a href="web.html"><img src="https://cdn.vectorstock.com/i/1000x1000/33/39/ayurvedic-plant-long-pepper-piper-longum-pippali-vector-13973339.webp" ></a>
+
+<!-- <p class="s">BLACK <br> GOLD</p> -->
+
+<div class="nav-link" id="navlink">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    
+    <ul  >
+        <li ><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">product</a></li>
+        <li><a href="">booking</a></li>
+        <li><a href="">contact</a></li>
+    </ul>
+
+    
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<div class="text-box">
+<h1>WELCOME TO NAVDURGA TRADERS</h1>
+<p> we are sell the best product which is deserve you.</p><br>
+<a href="" class="hero-btn">visit to konw more</a>
+
+
+
+</div>
+
+
+    </section>
+
+    <!-- about  section -->
+
+
+    <section class="about">
+
+<h1> About Our Service.</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, blanditiis.</p>
+
+ <div class="row">
+
+<div class="about-col">
+    <h3> Product Quality.</h3>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, amet. </p>
+</div>
+
+
+<div class="about-col">
+    <h3> About our service & many more.</h3>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ut. </p>
+</div>
+
+<div class="about-col">
+    <h3> About our service & many more.</h3>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sint! </p>
+</div>
+</div> 
+
+
+</section>
+
+<!-- product -->
+<section class="product">
+    <h1>Our Quality Product</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nobis.</p>
+    <div class="row">
+        <div class="product-col">
+            <img class="raw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJaZMCUNKUbFrTkzCx7RE0i6j3TMSVNq0qQ&usqp=CAU">
+            <div class="layer">
+                <h3> Lendi pipal</h3>
+        </div></div>
+        <div class="product-col">
+            <img class="raw"  src="https://assets.lybrate.com/q_auto:eco,f_auto,w_450/imgs/dt/tp/bd61ff467f23e7052f5c15d0b1aa2af9/4fb04f09557adcc5a8347834fa7dab94/b8287a.jpg">
+            <div class="layer">
+                <h3> bold pipal</h3>
+        </div></div>
+        <div class="product-col">
+            <img class="raw"  src="https://thumbs.dreamstime.com/b/dried-aromatic-pippali-long-pepper-black-wooden-rustic-background-260919315.jpg">
+            <div class="layer">
+                <h3> dry pipal</h3>
+        </div></div>
+
+        </div>
+
+
+</section>
+<!-- booking -->
+<section class="book">
+    <div>@offer 10% discount limited time offer</div> 
+    <h1> booking is always open... </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dicta.</p>
+    <h2> Book your product here</h2><br>
+    <form class="shu">
+        <input   type="text"  placeholder="full name" name="full name" required maxlength="50" minlength="6" autofocus   ><br><br>
+        <input type="email" placeholder="email" name="email" required ><br><br>
+        <input type="text" placeholder="password" name="password" required pattern="[0-9a-zA-Z]{9}"><br><br>
+        <input type="tel" placeholder="mobile no" inputmode="none" required><br><br>
+        
+        <input type="number" placeholder="quantity in kgs only" name="quantity" required><br><br>
+        <input type="text"  placeholder=" enter address" name="adrees"  maxlenth="100" required><br><br>
+        <input type="text"  placeholder=" type of product" name="product"  maxlenth="100" required><br><br>
+        
+
+        <button  type="submit">submit</button>
+        <button type="reset" >reset</button>
+    </form>
+   </section>
+  
+  <section class="contact">   
+    <div class="ram">
+        <h1>contact us</h1><br><br>
+         <input type="text" placeholder="full name" minlength="6" maxlength="15" required><br><br></div>
+            
+           <div class="ram" ><input type= "tel" placeholder="mobile no" inputmode="none" required ><br><br></div>
+           <div class="ram" ><button type="submit ">submit your responsehere</button>
+    </div>
+    </section>
+    <!-- footer -->
+   
+    <table border="0px" width="100%" align="center" cellpadding="15">
+        <tr align="center">
+    
+            <td> 
+            <img src="https://i.pinimg.com/originals/84/4e/8c/844e8cd4ab26c82286238471f0e5a901.png" width="25%"><br>
+            <font size="6">phone no</font>  <br>
+            <font size="5">7865489654</font>  
+            </td>
+            <td>
+                <img src="https://i.pinimg.com/originals/8f/c3/7b/8fc37b74b608a622588fbaa361485f32.png" width="25%"><br>
+            <font size="6">email.com</font>  <br>
+            <font size="5">abhg@gmail.com</font>
+    
+            </td>
+            <td>
+                <img src="https://i.pinimg.com/736x/29/93/fd/2993fd151e2e1cab871aec155e22cbcc--location-logo-gn.jpg" width="25%"><br>
+            <font size="6">location</font>  <br>
+            <font size="5">akola</
+            </td>
+    
+    
+        </tr>
+    
+    
+    
+    </table>
+    
+    <!-- end footer -->
+    <script src="pipal.js"></script>
+    </body>
+  </html>
+
+    
